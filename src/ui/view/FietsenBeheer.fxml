@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="455.0" prefWidth="688.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.controller.FietsenBeheerController">
+   <children>
+      <TableView fx:id="taFietsen" layoutX="11.0" layoutY="61.0" onMouseClicked="#laadGegevens" prefHeight="272.0" prefWidth="356.0">
+        <columns>
+          <TableColumn prefWidth="115.0" text="Registernummer"> 
+                 <cellValueFactory>
+                                        <PropertyValueFactory property="registratienummer" />
+                                    </cellValueFactory>    
+                                                                        </TableColumn>   
+          <TableColumn prefWidth="107.0" text="Status">
+             <cellValueFactory>
+                                        <PropertyValueFactory property="status" />
+                                    </cellValueFactory>    
+                                                                        </TableColumn>   
+            <TableColumn prefWidth="133.0" text="Standplaats">
+               <cellValueFactory>
+                                        <PropertyValueFactory property="standplaats" />
+                                    </cellValueFactory>    
+                                                                        </TableColumn>   
+        </columns>
+      </TableView>
+      <Button fx:id="btnToevoegenFiets" layoutX="12.0" layoutY="346.0" mnemonicParsing="false" onAction="#Toevoegen" text="Toevoegen fiets" />
+      <TextField fx:id="tfRegNr" layoutX="487.0" layoutY="61.0" />
+      <TextArea fx:id="tfOpmerking" layoutX="487.0" layoutY="131.0" prefHeight="128.0" prefWidth="167.0" />
+      <ComboBox fx:id="cbPlaats" layoutX="487.0" layoutY="97.0" prefWidth="150.0" />
+      <Button fx:id="btnWijzigStatus" layoutX="184.0" layoutY="346.0" mnemonicParsing="false" onAction="#wijzigenStatus" text="Wijzig status" />
+      <Label fx:id="ErrorMessage" layoutX="268.0" layoutY="23.0" textFill="#ff005e" />
+      <Button fx:id="btnTvFiets" layoutX="487.0" layoutY="359.0" mnemonicParsing="false" onAction="#ToevoegenFiets" text="Toevoegen" />
+      <RadioButton fx:id="rbActief" layoutX="496.0" layoutY="274.0" mnemonicParsing="false" onAction="#naarActief" text="Actief" textFill="#00ff26" />
+      <RadioButton fx:id="rbHerstelling" layoutX="496.0" layoutY="302.0" mnemonicParsing="false" onAction="#naarHerstelling" text="In herstelling" textFill="#ff9900" />
+      <RadioButton fx:id="rbUitomloop" layoutX="496.0" layoutY="328.0" mnemonicParsing="false" onAction="#naarUitomloop" text="Uitmloop" textFill="RED" />
+      <Button fx:id="btnMain" layoutX="14.0" layoutY="18.0" mnemonicParsing="false" onAction="#Main" text="Menu" />
+      <Label layoutX="375.0" layoutY="66.0" prefHeight="17.0" prefWidth="104.0" text="Registernummer" />
+      <Label layoutX="423.0" layoutY="102.0" text="Plaats" />
+      <Label layoutX="408.0" layoutY="131.0" text="Opmerking" />
+      <Label layoutX="433.0" layoutY="275.0" text="Status" />
+   
+   </children>
+</AnchorPane>

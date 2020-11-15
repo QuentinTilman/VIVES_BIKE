@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="190.0" prefWidth="249.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.controller.StartschermController">
+   <children>
+      <Button layoutX="81.0" layoutY="64.0" mnemonicParsing="false" onAction="#Leden" prefHeight="25.0" prefWidth="87.0" text="Leden" />
+      <Button layoutX="81.0" layoutY="103.0" mnemonicParsing="false" onAction="#Fietsen" prefHeight="25.0" prefWidth="87.0" text="Fietsen" />
+      <Button fx:id="Ritten" layoutX="81.0" layoutY="141.0" mnemonicParsing="false" onAction="#Ritten" prefHeight="25.0" prefWidth="87.0" text="Ritten" />
+      <Label alignment="CENTER" layoutY="6.0" prefHeight="27.0" prefWidth="249.0" text="Beheerscherm">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

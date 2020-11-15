@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.controller.RitControleController">
+   <children>
+      <ListView fx:id="lvLid" layoutX="26.0" layoutY="35.0" prefHeight="161.0" prefWidth="305.0" />
+      <ListView fx:id="lvFiets" layoutX="26.0" layoutY="219.0" prefHeight="149.0" prefWidth="305.0" />
+      <Button layoutX="394.0" layoutY="322.0" mnemonicParsing="false" onAction="#laadRitBeheer" text="Bevestigen" />
+      <Button layoutX="375.0" layoutY="102.0" mnemonicParsing="false" onAction="#laadSelectLid" text="Veranderen Lid" />
+      <Button layoutX="371.0" layoutY="239.0" mnemonicParsing="false" onAction="#LaadSelectFiets" text="Veranderen Fiets" />
+   </children>
+</AnchorPane>

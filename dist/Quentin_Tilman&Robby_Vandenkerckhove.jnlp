@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Quentin_Tilman&Robby_Vandenkerckhove.jnlp">
+  <information>
+    <title>Quentin_Tilman&Robby_Vandenkerckhove</title>
+    <vendor></vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Quentin_Tilman_Robby_Vandenkerckhove.jar" size="62549" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.23-bin.jar" size="834126" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Quentin_Tilman&Robby_Vandenkerckhove" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="ui.VIVESbike"  name="Quentin_Tilman&Robby_Vandenkerckhove" />
+  <update check="always"/>
+</jnlp>
