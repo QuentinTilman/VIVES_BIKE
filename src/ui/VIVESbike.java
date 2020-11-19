@@ -25,6 +25,7 @@ import ui.controller.SelectLidController;
 /**
  *
  * @author Katrien.Deleu
+ * 
  */
 public class VIVESbike extends Application {
 
