@@ -100,6 +100,8 @@ De meest gebruikte lagen zijn als volgt;
 * Applicatie laag; Service laag of Controller laag vanuit de GRASP principes.
 * Business laag: Laag waar de business logica terug te vinden is.
 * Data Acces layer (DAO): peristentie layer, is de laag waar de database aangeproken wordt.
+  
+  --> Elke tier zal een andere tier aanspreken via de API van een gedeelde interface. 
 
 ![Image](Icon-pictures.png "icon")
 
